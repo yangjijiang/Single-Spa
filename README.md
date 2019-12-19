@@ -6,23 +6,37 @@
 
 Demo演示1：本地运行
 演示一: 子服务来自远端
+
 1：启动 projectA、projectC服务
-   到各子项目的根目录执行：npm run dev
+   
+    到各子项目的根目录执行：npm run dev
+   
+   
 2：启动 projectBase 服务
-   到项目的public目录打开project.config.js，注册远端子服务
-   到根目录执行：npm run dev
+    
+    到项目的public目录打开project.config.js，注册远端子服务
+    到根目录执行：npm run dev
+
 
 演示二: 子服务来自本地
+
 1：打包 projectA、projectC 服务
-到各子项目的根目录执行：npm run prod
+
+    到各子项目的根目录执行：npm run prod
+
 
 2：将projectA、projectC工程下target目录中的projectA、projectC目录，考贝到projectBase工程下的modules下
 
+
 3：启动 projectBase 服务
-   到项目的public目录打开project.config.js，注册本地子服务
-   到根目录执行：npm run dev
+
+    到项目的public目录打开project.config.js，注册本地子服务
+    到根目录执行：npm run dev
+   
+   
    
 Demo演示2: Nginx上发布运行
+
 演示一: 子服务来自远端，nginx.conf配置
 
 演示二: 子服务来自本地，nginx.conf配置
