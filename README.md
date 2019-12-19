@@ -2,6 +2,7 @@
 前端微服务框架
 
 1:projectBase基本框架，功能：做各子服务的集成（类似于后端微服务的关网）。
+
 2:projectA、projectC 为独立子服务应用（可由不同的技术栈Vue、React、Angularjs等实现），子服务应用可独立开发、测式、发布、部置。
 
 Demo演示1：本地运行
