@@ -26,6 +26,7 @@ Demo演示2: Nginx上发布运行
 演示一: 子服务来自远端，nginx.conf配置
 
 演示二: 子服务来自本地，nginx.conf配置
+
     server {
           listen       8080;
           server_name  localhost;
