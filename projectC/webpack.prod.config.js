@@ -7,8 +7,8 @@ const project = require('./project')
 module.exports = merge(webpackBaseConfig, {
     mode: 'production',
     output: {
-        publicPath: `/modules${project.prefix}`,
-        path: path.join(__dirname, `./target/${project.name}/`),
+        publicPath: `/dist${project.prefix}`,
+        path: path.join(__dirname, `./target/dist/${project.name}/`),
         filename: '[name].js',
         chunkFilename: '[name].chunk.js'
     },

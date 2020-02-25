@@ -24,7 +24,8 @@ module.exports = merge(webpackBaseConfig, {
             inject: false
         }),
         new CopyWebpackPlugin([
-            { from: path.join(__dirname,'./modules'), to:  path.join(__dirname, 'target/modules'),toType: 'dir' },
+            // { from: path.join(__dirname,'./modules'), to:  path.join(__dirname, 'target/modules'),toType: 'dir' },
+            { from: path.join(__dirname,'./dist'), to:  path.join(__dirname, 'target/dist'),toType: 'dir' },
             { from: path.join(__dirname,'./public/project.config.js'), to:  path.join(__dirname, `target/project.config.js`) },
         ])
     ]
