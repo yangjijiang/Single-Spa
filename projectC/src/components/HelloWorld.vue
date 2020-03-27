@@ -12,6 +12,7 @@
         </div>
         <div class="btn-box">
             <button class="btn" @click="handleRemoveListenerBtnClick">打印监听</button>
+            <p>来自projectA的函数接口：{{appData}}</p>
         </div>
     </div>
 </template>
@@ -21,6 +22,7 @@
         data(){
             return{
                 number : 0,
+                appData: null
             }
         },
         computed: {
@@ -39,7 +41,15 @@
             },
             //取消打印事件监听
             handleRemoveListenerBtnClick(){
-                this.number =  this.$globalStore && this.$globalStore.getState("projectA").render.refresh
+                let projectA = this.$globalStore && this.$globalStore.getState("projectA")
+                if(projectA){
+                    let render = projectA.render
+                    this.number =  render.refresh
+                    render.APPAPI().then(response => {
+                        console.log(">>>>>>>>>>>>>",response.data)
+                        this.appData = response.data
+                    })
+                }
             }
         },
         mounted() {

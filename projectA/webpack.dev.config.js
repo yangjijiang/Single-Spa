@@ -14,7 +14,7 @@ module.exports = merge(webpackBaseConfig, {
         proxy: {
             '**' : {
                 //target: `http://localhost:8088`,
-                target: 'http://tjpocmega.jdfmgt.com',
+                target: 'https://www.fastmock.site/mock/fff42ff666b9a968bbf224163d67d9b5',
                 bypass: function(req, res, proxyOptions) {
                     if (!req.headers.accept || req.headers.accept.indexOf('html') !== -1) {
                         return '/index.html'

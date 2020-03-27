@@ -1,7 +1,9 @@
 import { createStore, combineReducers } from 'redux'
+import {app1Api} from "./service/serverApi";
 
 const initialState = {
-    refresh: 0
+    refresh: 0,     // 属性发布（广播）
+    APPAPI: app1Api // 函数或接口发布（广播）
 }
 
 function render(state = initialState, action) {

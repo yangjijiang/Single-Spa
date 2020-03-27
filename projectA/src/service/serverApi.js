@@ -7,6 +7,9 @@ import axios from 'axios'
 
 // axios.defaults.baseURL = '/api';          // 本地dev
 // axios.defaults.baseURL = '/projectA/api'; // 微服务提供
-axios.defaults.headers.common['Authorization'] = `Bearer erfn4Tbt38b9wpvo8QgHrbh4f88znV`
-const app1Api = () => axios.get("/entity/server_only/")
+// axios.defaults.headers.common['Authorization'] = `Bearer erfn4Tbt38b9wpvo8QgHrbh4f88znV`
+// const app1Api = () => axios.get("/entity/server_only/")
+// export { app1Api }
+
+const app1Api = () => axios.get("/apitest")
 export { app1Api }

@@ -28,7 +28,7 @@ module.exports = merge(webpackBaseConfig, {
                 // changeOrigin: true,
                 // secure: false,
                 // logLevel:'info',
-                pathRewrite: {"^/projectA/api" : "/api"}
+                pathRewrite: {"^/projectA/test" : "/test"}
             },
             '/projectC':{
                 target: `http://localhost:8082`,

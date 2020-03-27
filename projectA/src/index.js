@@ -4,7 +4,7 @@ import * as storeInstance from './globalStore' // 要抽出去
 
 import axios from 'axios'
 // api异步请求隔离
-axios.defaults.baseURL = '/projectA/api';
+axios.defaults.baseURL = '/projectA/test';
 
 
 const {el, ...appOptions} = AppOptions
